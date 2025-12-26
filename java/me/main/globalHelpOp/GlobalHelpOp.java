@@ -13,7 +13,7 @@ import org.slf4j.Logger;
         id = "globalhelpop",
         name = "GlobalHelpOp",
         version = "1.0",
-        authors = {"TuNombre"}
+        authors = {"NovaPuto"}
 )
 public class GlobalHelpOp {
 
