@@ -1,0 +1,13 @@
+{
+  "id": "globalhelpop",
+  "name": "GlobalHelpOp",
+  "version": "1.0",
+  "description": "Sistema de ayuda para el proxy falion pe",
+  "main": "me.main.globalHelpOp.GlobalHelpOp",
+  "dependencies": [
+    {
+      "id": "adventure",
+      "optional": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# PREDETERMINADO SI EN CASO SE BORRA LA CONFIG SE PONE AUTOMATICAMENTE ESTA CONFIFG.YML PE PE
+
+
+prefix: "&6[&eHelpOp&6]&r "
+staff-permission: "globalhelpop.staff"
+
+messages:
+  success: "&aTu solicitud de ayuda ha sido enviada al Staff."
+  usage-player: "&cUso: /helpop <mensaje>"
+  only-players: "&cSolo los jugadores pueden usar este comando."
+  response-to-player: "&eRespuesta del Staff (&b%staff%&e): &a%message%"
+  response-sent: "&aRespuesta enviada a %player%."
+  usage-staff-response: "&cUso: /h <nick> <mensaje>"
+  player-not-found: "&cEl jugador %player% no está conectado."
+  teleport-success: "&aConectado a la modalidad &6%server% &apara asistir a &b%player%."
+  teleport-error: "&cError al conectar a la modalidad del jugador."
+  teleport-invalid-server: "&cEl jugador no está en un servidor válido."
+
+helpop-format:
+  prefix-enabled: true
+
+  title:
+    title-text: "&c&l¡NUEVA SOLICITUD!"
+    subtitle-text: "&e%player% &cpide ayuda en &e%server%."
+    fadein: 10
+    stay: 60
+    fadeout: 10
+
+  sound:
+    enabled: true
+    name: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.0
+    pitch: 1.0
+
+  format-lines:
+    - "&7--------------------"
+    - "&c&lSOLICITUD GLOBAL"
+    - "&7Jugador: &b%player%"
+    - "&7Servidor: &e%server%"
+    - "&7Mensaje: &f%message%"
+    - ""
+    - buttontext:
+        text: "&7[&aIR A MODALIDAD&7]"
+        hover-text: "&eClick para ir al servidor de &b%player% &e(&a%server%&e)"
+        command: "/helpopteleport %player%"
+    - "&7--------------------"
+
+reload:
+  permission: "globalhelpop.reload"
+  success: "&aConfiguración de GlobalHelpOp recargada."
